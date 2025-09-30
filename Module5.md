@@ -71,11 +71,68 @@ The challenge teaches me about using mixing globs.
 **Flag** `pwn.college{ItuEVuVdC7ss2pwQgDN6CxwlgdX.QX1IDO0wCMyEzNzEzW}`
 ```
 Bash supports the expansion of multiple globs in a single word.
-Here,i had to Go Go cd there and, using globbing, write a single, short (6 characters or less) glob that (when passed as an argument to /challenge/run) will match the files "challenging", "educational", and "pwning"!
+Here,i had to Go cd there and, using globbing, write a single, short (6 characters or less) glob that (when passed as an argument to /challenge/run) will match the files "challenging", "educational", and "pwning"!
 So, i used  /challenge/run [epc]* command to get my flag.
 ```
 ### What I learned
 I learned to invoke files/directories/commands using multiple globs at once.
+### Refernces
+The matter in pwn.college
+
+
+## Exclusionary globbing
+The challenge teaches me about exclusionary globs.
+**Flag** `pwn.college{8pHxxx5gyBflQ-Me_sx6Jw4NYag.QX2IDO0wCMyEzNzEzW}`
+```
+Sometimes, we want to filter out files in a glob. [] helps us do just this.
+If the first character in the brackets is a ! or (in newer versions of bash) a ^, the glob inverts, and that bracket instance matches characters that aren't listed.
+Here,i had to go forth to /challenge/files and run /challenge/run with all files that don't start with p, w, or n.
+So, i used   /challenge/run [!pwn]* command to get my flag.
+```
+### What I learned
+I learned to invoke files/directories/commands using multiple globs at once.
+### Refernces
+The matter in pwn.college
+
+
+## Tab completion
+The challenge teaches me about the tab completion feature.
+**Flag** `pwn.college{gYH4E9Xi0iFUegJox8sdWBDMPJH.0FN0EzNxwCMyEzNzEzW}`
+```
+A safer alternative when we are trying to specify a specific target is tab completion.
+If we hit tab in the shell, it'll try to figure out what we're going to type and automatically complete it which is super useful.
+Here, i had to type /challenge/pwncollege command using tab key to get my flag.
+```
+### What I learned
+I learned Auto-completion and its use in specifying files.
+### Refernces
+The matter in pwn.college
+
+
+## Multiple options for tab completion
+The challenge teaches me about the  multiple options present in tab completion feature.
+**Flag** `pwn.college{8RArQNfiNV6PzkmBNLelytyldMa.0lN0EzNxwCMyEzNzEzW}`
+```
+When we hit tab a second time, it'll print out those options. Other shells and configurations, instead, will cycle through the options.
+Here, there was a  /challenge/files directory with a bunch of files starting with pwncollege,so i had to tab complete /challenge/files/p and similar commands to get the flag.
+```
+### What I learned
+I learned  Auto-completion feature in the case of multiple options.
+### Refernces
+The matter in pwn.college
+
+
+
+## Tab completion on commands
+The challenge teaches me more about tab completion feature.
+**Flag** `pwn.college{o5XoH8tR4rlC3n1jlkSnEfSHHqc.0VN0EzNxwCMyEzNzEzW}`
+```
+Tab completion is for more than files.
+We can also tab-complete commands.
+Here, the flag command started with pwncollege so i had to auto-complete it using tab key to get the flag.
+```
+### What I learned
+I learned  Auto-completion feature in the case of commands.
 ### Refernces
 The matter in pwn.college
 
