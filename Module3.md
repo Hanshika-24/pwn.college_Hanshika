@@ -172,13 +172,13 @@ The video in pwn.college
 
 ## Linking files
 The challenge teaches me about symbolic links.
-**Flag** `pwn.college{4blJVRNzClDpnF7g1e-jmUCeIWz.QXwUDO0wCMyEzNzEzW}`
+**Flag** `pwn.college{c5vJJKZj_JRcUQt7O77cVTwG57N.QX5ETN1wCMyEzNzEzW}`
 ``` bash
 In a filesystem, a file is, conceptually, an address at which the contents of that file live.
 A hard link is an alternate address that indexes that data, accesses to the hard link and accesses to the original file are completely identical, in that they immediately yield the necessary data. A soft/symbolic link, instead, contains the original file name.
 When you access the symbolic link, Linux will realize that it is a symbolic link, read the original file name, and then (typically) automatically access that file. In most cases, both situations result in accessing the original data, but the mechanisms are different.
 Symbolic links are created with the ln command with the -s argument, like so:
-Here, i had to find the flag file using symlinks because /challenge/catflag read out /home/hacker/not-the-flag to get my flag.
+Here, i had to find the flag file using symlinks because /challenge/catflag read out /home/hacker/not-the-flag.So, i made /home/hacker/not-the-flag read out /flag and called /challenge/catflag  to get my flag.
 ```
 ### What I learned
 I learned how to use symlinks created using ln command with -s argument.
