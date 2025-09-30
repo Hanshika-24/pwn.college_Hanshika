@@ -1,5 +1,5 @@
 # Digesting Documentation
-## learning from documentation
+## Learning from documentation
 The challenge teaches me reading from documentation.
 **Flag** `pwn.college{4FYb1LmJPPJMmPuCWYiOzNG73fr.QX0ITO0wCMyEzNzEzW}`
 ``` bash
@@ -13,7 +13,7 @@ I learned about the various ways of asking the environment for help for the prog
 The video in pwn.college
 
 
-## learning complex usage
+## Learning complex usage
 The challenge teaches me complex documentation.
 **Flag** `pwn.college{QpNFOjSFXELVLybCUpIENb4ba8j.QX1ITO0wCMyEzNzEzW}`
 ``` bash
