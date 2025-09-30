@@ -157,6 +157,19 @@ I learned how to create directories using mkdir command.
 The video in pwn.college
 
 
+## Finding files
+The challenge teaches me to use mkdir command
+**Flag** `pwn.college{oWxjO8g9iRAGlgRk2AZtN_LVtTh.QXxMDO0wCMyEzNzEzW}`
+``` bash
+We can make directories using the mkdir command. Then we can stick files in there.
+Here, i created a /tmp/pwn directory and made  a college file in it to get my flag.
+```
+### What I learned
+I learned how to create directories using mkdir command.
+### References
+The video in pwn.college
+
+
 ## Linking files
 The challenge teaches me about symbolic links.
 **Flag** `pwn.college{4blJVRNzClDpnF7g1e-jmUCeIWz.QXwUDO0wCMyEzNzEzW}`
