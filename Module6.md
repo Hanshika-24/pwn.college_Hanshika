@@ -167,29 +167,29 @@ The matter in pwn.college
 
 ## Split-piping stderr and stdout
 The challenge teaches me process substitution for writing to commands.
-**Flag** `pwn.college{kNrlbHEL-JhGl4Ash9SYjy3shHZ.QX5EDO0wCMyEzNzEzW}`
+**Flag** `pwn.college{Ux_at8kkTJtYhdbhzmN7FMcvz0R.QX0YTN0wCMyEzNzEzW}`
 ```bash
-If we write an argument of >(rev), bash will run the rev command (this command reads data from standard input, reverses its order, and writes it to standard output!), but hook up its input to a temporary named pipe file.
-When commands write to this file, the data goes to the standard input of the command
-Here,i had to Run the /challenge/hack command, and duplicate its output as input to both the /challenge/the and the /challenge/planet commands to get the flag.
+The | operator links the stdout of the left command with the stdin of the right command.
+Here,i had to perform multiple stderr and stdout redirection on commands to get the flag.
 ```
 ### What I learned
-I learned to use process substitution for writing to commands.
+I learned to use stderr and stdout redirection in depth.
 ### References
 The matter in pwn.college
 
 
 
 ## Named pipes
-The challenge teaches me process substitution for writing to commands.
-**Flag** `pwn.college{kNrlbHEL-JhGl4Ash9SYjy3shHZ.QX5EDO0wCMyEzNzEzW}`
+The challenge teaches me how to create my own pipes.
+**Flag** `pwn.college{gNloWdYS0Dk15ntydQz0eY4aTOu.01MzMDOxwCMyEzNzEzW}`
 ```bash
-If we write an argument of >(rev), bash will run the rev command (this command reads data from standard input, reverses its order, and writes it to standard output!), but hook up its input to a temporary named pipe file.
-When commands write to this file, the data goes to the standard input of the command
-Here,i had to Run the /challenge/hack command, and duplicate its output as input to both the /challenge/the and the /challenge/planet commands to get the flag.
+We can also create your own persistent named pipes that stick around on the filesystem.
+These are called FIFOs, which stands for First (byte) In, First (byte) Out.
+The p at the beginning of the permissions - that indicates it's a pipe,that's markedly different than the - that's at the beginning of normal files.
+Here,i had to create a /tmp/flag_fifo file and redirect the stdout of /challenge/run to it to get the flag.
 ```
 ### What I learned
-I learned to use process substitution for writing to commands.
+I learned to create pipes using redirection.
 ### References
 The matter in pwn.college
 
