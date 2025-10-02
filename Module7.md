@@ -1,7 +1,7 @@
 # Shell variables
 ## Printing varaibles
 The challenge teaches me printing variables out.
-**Flag** `pwn.college{cIA8sxDaqsllJgAxwCkyvz_ME_D.QXxIDO0wCMyEzNzEzW}`
+**Flag** `pwn.college{seAzIbqza8t9xxJ1It28CZPcmCP.QX3UTN0wCMyEzNzEzW}`
 ```bash
 We can also print out variables with echo, by prepending the variable name with a $.
 For example, there is a variable, PWD, that always holds the current working directory of the current shell.
