@@ -81,7 +81,7 @@ The fg command is a builtin that takes the suspended process, resumes it, and pu
 Here, /challenge/run wanted to be suspended, then resumed,so i used Ctrl-z key and then fg command to get the flag.
 ```
 ### What I learned
-I learned to use keys to  resume suspended running processes.
+I learned to use keys to  resume suspended running processes in foreground.
 ### References
 The matter in pwn.college
 
@@ -89,12 +89,64 @@ The matter in pwn.college
 ## Backgrounding Processes
 The challenge teaches me to resume suspended processes in the background.
 ### My solve
-**Flag** `pwn.college{gVQH3uSLlH3B8h1qdAgqTsxf0ZN.QX2QDO0wCMyEzNzEzW}`
+**Flag** `pwn.college{Ybu0ZbaIY7jAyctgYkIGHzwtL-m.QX3QDO0wCMyEzNzEzW}`
 ```bash
-The fg command is a builtin that takes the suspended process, resumes it, and puts it back in the foreground of the terminal.
-Here, /challenge/run wanted to be suspended, then resumed,so i used Ctrl-z key and then fg command to get the flag.
+We can resume processes in the background with the bg command.
+It will allow the process to keep running, while giving the shell back to invoke more commands in the meantime.
+Here, /challenge/run wanted to be suspended, then resumed in background, so i used Ctrl-z key and then bg command to get the flag.
 ```
 ### What I learned
-I learned to use keys to  resume suspended running processes.
+I learned to use keys to  resume suspended running processes in background.
 ### References
 The matter in pwn.college
+
+
+## Foregrounding Processes
+The challenge teaches me to resume suspended processes in the background.
+### My solve
+**Flag** `pwn.college{okW81ubDjyGiWbxU0PgQbELA_BR.QX4QDO0wCMyEzNzEzW}`
+```bash
+We can resume processes in the background with the bg command.
+It will allow the process to keep running, while giving the shell back to invoke more commands in the meantime.
+Here, /challenge/run wanted to be suspended, then resumed in foreground, so i used Ctrl-z key and then bg command and subsequently fg command to get the flag.
+```
+### What I learned
+I learned to use keys to  resume suspended running processes in background.
+### References
+The matter in pwn.college
+
+
+
+## Starting Backgrounded Processes
+The challenge teaches me to resume suspended processes in the background.
+### My solve
+**Flag** `pwn.college{oXRsCvnfBCpH1Zw1VMwlYs2hJ7-.QX5QDO0wCMyEzNzEzW}}`
+```bash
+We can resume processes in the background with the bg command.
+It will allow the process to keep running, while giving the shell back to invoke more commands in the meantime.
+Here, /challenge/run wanted to be suspended, then resumed in foreground, so i used Ctrl-z key and then bg command and subsequently fg command to get the flag.
+```
+### What I learned
+I learned to use keys to  resume suspended running processes in background.
+### References
+The matter in pwn.college
+
+
+
+## Process Exit Codes
+The challenge teaches me to resume suspended processes in the background.
+### My solve
+**Flag** `pwn.college{oXRsCvnfBCpH1Zw1VMwlYs2hJ7-.QX5QDO0wCMyEzNzEzW}}`
+```bash
+We can resume processes in the background with the bg command.
+It will allow the process to keep running, while giving the shell back to invoke more commands in the meantime.
+Here, /challenge/run wanted to be suspended, then resumed in foreground, so i used Ctrl-z key and then bg command and subsequently fg command to get the flag.
+```
+### What I learned
+I learned to use keys to  resume suspended running processes in background.
+### References
+The matter in pwn.college
+
+
+
+
