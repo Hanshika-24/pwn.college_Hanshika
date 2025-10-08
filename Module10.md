@@ -32,14 +32,14 @@ The video in pwn.college
 ## Cracking passwords
 The challenge teaches me how to find secret passwords.
 ### My solve
-**Flag** `pwn.college{w1n5Hx-wv0eh6CVG8pAxpAMvtvW.QX2UDN1wCMyEzNzEzW}`
+**Flag** `pwn.college{EpUuTh2hVKMBYm2a-lJdUeIiL2R.QX3UDN1wCMyEzNzEzW}`
 ```bash
 Passwords used to be stored in /etc/passwd, but because /etc/passwd is a globally-readable file, this is not good for passwords, these were moved to /etc/shadow.
 Separated by :s, the first field of each line is the username and the second is the password. A value of * or ! functionally means that password login for the account is disabled, a blank field means that there is no password (a not-uncommon misconfiguration that allows password-less su in some configurations), and the long string is the result of one-way-encrypting (hashing) Zardus' password from the last level. 
-Here,i first used  su zardus command and put in the password to become zardus user then did /challenge/run to get the flag.
+Here,i  first found zarus' hash using cat /challenge/shadow-leak command,also used john /challenge/shadow-leak command and then used  su zardus command and put in the password to become zardus user then did /challenge/run to get the flag.
 ```
 ### What I learned
-I learned about su command which can also be used to become any user.
+I learned about su command which can also be used find secret passwords using hash.
 ### References
 The video in pwn.college
 
