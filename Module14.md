@@ -60,7 +60,7 @@ which
 ## Hijacking commands
 The challenge teaches me to edit commands.
 ### My solve
-**Flag** `pwn.college{gaQv2U5fi0rTi2aNfUG0GpGll-b.01NzEzNxwCMyEzNzEzW}`
+**Flag** ` pwn.college{4lpMnCtOte32fak0cD_Wemnh_ec.QX3cjM1wCMyEzNzEzW} ⁠`
 ```bash
 Here, i created a fake rm command containing cat /flag then made it executible using chmod +x rm command and used PATH="/home/hacker:/run/dojo/bin” then used /challenge/run to get the flag.
 ```
