@@ -61,7 +61,7 @@ The matter in pwn.college
 ## Detaching and attaching(tmux)
 The challenge teaches me how to use tmux to Deattach and attach.
 ### My solve
-**Flag** `pwn.college{kAmUpn6DaGhbn7VCULOlmKekGx1.0FO4IDOxwCMyEzNzEzW}`
+**Flag** `pwn.college{0n2kfuPdCW4T5NlWsI_nYGv4x-b.0VO4IDOxwCMyEzNzEzW}`
 ```bash
 tmux (terminal multiplexer) is screen's younger, more modern cousin. It does all the same things but with some different key bindings.
 Instead of Ctrl-A, tmux uses Ctrl-B as its command prefix.
@@ -76,10 +76,10 @@ The matter in pwn.college
 ## Switching windows(tmux)
 The challenge teaches me how to Switch windows in tmux.
 ### My solve
-**Flag** `pwn.college{kAmUpn6DaGhbn7VCULOlmKekGx1.0FO4IDOxwCMyEzNzEzW}`
+**Flag** `pwn.college{8Rwxty7c504LfaI5OHZ97uXhFke.0FM5IDOxwCMyEzNzEzW}`
 ```bash
 Tmux shows your windows at the bottom in a status bar.
-Here, i had to use tmux -a command to reattach to the tmux and then navigate to window 0 of it using ctr-b 0 button  to get my flag.
+Here, i had to use tmux a command to reattach to the tmux and then navigate to window 0 of it using ctr-b 0 button  to get my flag.
 ```
 ### What I learned
 I learned about navigating windows in tmux.
