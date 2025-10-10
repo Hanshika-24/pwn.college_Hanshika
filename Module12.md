@@ -190,15 +190,14 @@ The matter in pwn.college
 
 
 ## Reading shell scripts
-The challenge teaches me how to chain commands.
+The challenge teaches me how to read scripts.
 ### My solve
-**Flag** `pwn.college{svER9X_-Kp6Nigj5F-wChpwpiWa.01M0MDOxwCMyEzNzEzW}`
+**Flag** `pwn.college{MCc-9scXR2h0L2s6CpCfCn8WrW0.0lMwgDOxwCMyEzNzEzW}`
 ```bash
 Reading shell scripts are very handy for doing simple "system-level" tasks, and are a common tool that developers and sysadmins reach for. In fact, a surprising fraction of the programs on a typical Linux machine are shell scripts.
-
-
+Here, i used /challenge/run command and gave "hack the PLANET" as input to ge the flag.
 ```
 ### What I learned
-I learned about chaning commands using semicolons.
+I learned about reading shell scripts.
 ### References
 The matter in pwn.college
