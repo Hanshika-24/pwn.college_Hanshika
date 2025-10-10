@@ -46,12 +46,38 @@ The video in pwn.college
 ## Changing permissions
 The challenge teaches me how to change groups.
 ### My solve
-**Flag** `pwn.college{MGIvLM7jbkySjKS9tue01S0Maxd.QXycjM1wCMyEzNzEzW}`
+**Flag** `pwn.college{o9NPqJSNXbV1Y2DpzqauReazoqu.QXzcjM1wCMyEzNzEzW}`
 ```bash
 Like ownership, file permissions can also be changed. This is done with the chmod (change mode) command. 
-Here,i  to get the flag.
+Here,i ls -l /flag to check the current permissions of flag file then i used chmod o+r /flag command to get access to it and thencat /flag  to get the flag.
 ```
 ### What I learned
-I learned about id command.
+I learned about chmod command.
+### References
+The video in pwn.college
+
+
+## Executible files
+The challenge teaches me how to change user access to files.
+### My solve
+**Flag** `pwn.college{c0dVnYCT2ArsnGcvWedsKG8TNhU.QXyEjN0wCMyEzNzEzW}`
+```bash
+Here,i used ls -l /challenge/run to check the current permissions of flag file then i used chmod a+x /challenge/run command to get access to it and then /challenge/run  to get the flag.
+```
+### What I learned
+I learned about chmod command.
+### References
+The video in pwn.college
+
+
+## Permission tweaking practice
+The challenge teaches me how to change permissions.
+### My solve
+**Flag** `pwn.college{c0dVnYCT2ArsnGcvWedsKG8TNhU.QXyEjN0wCMyEzNzEzW}`
+```bash
+Here,i ls -l /challenge/run to check the current permissions of flag file then i used chmod a+x /challenge/run command to get access to it and then /challenge/run  to get the flag.
+```
+### What I learned
+I learned about chmod command.
 ### References
 The video in pwn.college
