@@ -45,26 +45,27 @@ The matter in pwn.college
 ## Adding commands
 The challenge teaches me to add commands.
 ### My solve
-**Flag** `pwn.college{gaQv2U5fi0rTi2aNfUG0GpGll-b.01NzEzNxwCMyEzNzEzW}`
+**Flag** `pwn.college{EvQyOHyYLwHhxHezYLk_y755gOz.QX2cjM1wCMyEzNzEzW}`
 ```bash
 Mirroring what the shell does when searching for commands, which looks at each directory in $PATH in order and prints the first file it finds whose name matches the argument passed.
+Here, i first created a win command containing cat /flag using nano win and then set PATH="/home/hacker:/run/dojo/bin" and made win executable using chmod a+x win and finally did /challenge/run to get the flag.
 
 ```
 ### What I learned
-I learned about which command.
+I learned about creating executable commands.
 ### References
 The matter in pwn.college
 
-
+which
 ## Hijacking commands
 The challenge teaches me to edit commands.
 ### My solve
 **Flag** `pwn.college{gaQv2U5fi0rTi2aNfUG0GpGll-b.01NzEzNxwCMyEzNzEzW}`
 ```bash
-
+Here, i created a fake rm command containing cat /flag then made it executible using chmod +x rm command and used PATH="/home/hacker:/run/dojo/bin” then used /challenge/run to get the flag.
 ```
 ### What I learned
-I learned about which command.
+I learned about creating fake commands to hijack.
 ### References
 The matter in pwn.college
 
